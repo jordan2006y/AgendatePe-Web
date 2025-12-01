@@ -1,0 +1,116 @@
+/* 1. CONFIGURACIÓN DEL CONTENEDOR PRINCIPAL */
+.contenedor-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000; /* Fondo negro puro para coincidir con login/registro */
+  padding: 32px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: auto;
+}
+
+/* 2. ESTILOS DEL LOGO */
+.logo {
+  width: 150px;
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 3. TEXTOS */
+.texto-bienvenida {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.texto-bienvenida h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.texto-bienvenida p {
+  font-size: 16px;
+  color: #B0B3B8;
+  max-width: 300px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.spacer { flex: 1; min-height: 20px; }
+
+/* 4. BOTONES */
+.botones-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  max-width: 350px;
+  padding: 16px 0;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+button:active { transform: scale(0.98); }
+button:hover { opacity: 0.9; }
+
+.btn-azul { background-color: #0062E0; color: white; }
+.btn-outline { background-color: transparent; border: 2px solid white; color: white; }
+
+/* --- BOTÓN GOOGLE MEJORADO --- */
+.btn-google {
+  background-color: #1C2533; /* Fondo gris oscuro */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Espacio entre logo y texto */
+  border: 1px solid #333;
+}
+
+.icono-google {
+  width: 20px;
+  height: 20px;
+  /* No lleva color porque el SVG ya tiene sus colores originales */
+}
+
+/* 5. SEPARADOR */
+.separador {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px 0;
+  color: #6C757D;
+  font-size: 14px;
+}
+
+.linea { flex: 1; height: 1px; background-color: #333; }
+.separador span { padding: 0 10px; }
+
+/* 6. MEDIA QUERIES */
+@media (max-height: 650px) {
+  .contenedor-inicio { padding: 16px; justify-content: flex-start; }
+  .logo { width: 100px; margin-top: 10px; }
+  .texto-bienvenida h1 { font-size: 22px; }
+  .spacer { display: none; }
+  button { padding: 12px 0; }
+}

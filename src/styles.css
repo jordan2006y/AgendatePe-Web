@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+/* Esto hace que el fondo y la letra se parezcan a tu App */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* La letra típica de Android */
+  background-color: #2B4162; /* Tu color Azul */
+  color: white;
+}
+
+/* Vamos a crear una clase para tus botones color Crema */
+.btn-crema {
+  background-color: #D7B377;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Bordes redondos como en tu app */
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 16px;
+}

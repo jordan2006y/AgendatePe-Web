@@ -1,0 +1,71 @@
+.contenedor-registro {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000000;
+  padding: 24px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: auto; /* Por si la pantalla es pequeña */
+}
+
+.header { margin-bottom: 20px; }
+.flecha-atras { color: white; cursor: pointer; display: block; }
+
+.titulo-principal { font-size: 28px; font-weight: bold; margin: 0 0 8px 0; }
+.subtitulo { font-size: 14px; color: #888888; margin: 0; }
+
+.espacio { height: 16px; }
+.espacio-grande { height: 40px; }
+
+/* --- ESTILOS INPUTS --- */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 0 16px;
+  height: 56px;
+  transition: border-color 0.3s;
+}
+
+.input-group:focus-within { border-color: #0062E0; }
+
+/* Estado de Error (Rojo) */
+.input-group.input-error { border-color: #ff4444; }
+
+.error-texto {
+  color: #ff4444;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* --- ESTILOS ICONOS SVG --- */
+.icono-svg {
+  width: 24px; height: 24px; margin-right: 12px;
+  color: #9CA3AF; fill: none; stroke: currentColor; stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+.icono-ojo-svg {
+  width: 24px; height: 24px; margin-left: 10px;
+  color: #9CA3AF; cursor: pointer; fill: none; stroke: currentColor;
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.campo-texto {
+  flex: 1; background: transparent; border: none;
+  color: white; font-size: 16px; outline: none;
+}
+
+.spacer { flex: 1; }
+
+.btn-continuar {
+  background-color: #0062E0; color: white; font-weight: bold;
+  border: none; padding: 16px 0; width: 100%; border-radius: 30px;
+  font-size: 16px; cursor: pointer; margin-bottom: 10px;
+}
+.btn-continuar:active { background-color: #004bb0; }
